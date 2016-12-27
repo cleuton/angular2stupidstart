@@ -18,7 +18,7 @@ Ok, your boss has sold a new and improved web interface to the Client! He said t
 
 **CALM YOU KEEP, AND THE PATH YOU FOLLOW, PADAWAN**
 
-**Clone the quickstart repository**
+**Download the quickstart seed repository**
 
 Angular team has created a very simple "quickstart" repository: [angular.io quickstart seed](https://github.com/angular/quickstart). Just
 create a new folder, and download the ZIP into it. Do not clone the *Quickstart seed* repo. Relax! Don't bother with creating a Git repo or setup anything. 
