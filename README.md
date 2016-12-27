@@ -302,7 +302,58 @@ The first function (`pesquisar()`) just invokes `getIpData()`, which return an i
 
 So, the second function (`getIpData()`) uses `http.get()` to send a **GET** request to the RESTful service. Then, we use the `map` function (which we have just imported) to get the json() response. We also use the `catch` function, to get the error.
 
-This is how we get data using `http` service. It will be easier to use `Promise`, but it is outside the scope for this demo. 
+This is how we get data using `http` service. It will be easier to use `Promise`, but it is outside the scope for this demo.
+
+**Let's change the HTML template**
+
+We need to show the properties using a `<table>`. This is easy! Just change the `template` property of the `@Component` decorator to: 
+
+```
+  template: `
+      <h1>Welcome to: {{name}}</h1>
+      <input type="button" value="Pesquisar" (click)="pesquisar()"/>
+      <hr/>
+      <div *ngIf="resultado">
+          <table border="1">
+              <thead>
+                  <tr role="row">
+                      <th>Propriedade</th>
+                      <th>Valor</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>ip</td>
+                      <td>{{resultado.ip}}</td>
+                  </tr>
+                  <tr>
+                      <td>hostname</td>
+                      <td>{{resultado.city}}</td>
+                  </tr>
+                  <tr>
+                      <td>region</td>
+                      <td>{{resultado.region}}</td>
+                  </tr>
+                  <tr>
+                      <td>country</td>
+                      <td>{{resultado.country}}</td>
+                  </tr>
+                  <tr>
+                      <td>loc</td>
+                      <td>{{resultado.loc}}</td>
+                  </tr>
+                  <tr>
+                      <td>org</td>
+                      <td>{{resultado.org}}</td>
+                  </tr>
+              </tbody>
+          </table>        
+      </div> 
+  `
+``` 
+
+The "`" signal allows us to use multiline strings. This ends our tutorial. 
+
 
 ## Did it run?
 
