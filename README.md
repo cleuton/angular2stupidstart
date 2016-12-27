@@ -2,6 +2,8 @@
 
 *By Cleuton Sampaio*
 
+[Brazilian Portuguese ![Brazil](brasil.png)](README_PT-BR.md)
+
 Angular 2 is not easy to learn, despite their efforts creating a tutorial, even this tutorial is quite difficult to understand. There are many new concepts, and a good deal of Accidental Complexity, which even frightens Java developers.
 
 **Stupid Start** Shows a simple REST/Web app, which consumes a public RESTful service. It does not show you all the *bells and whistles* of a full-fledged Angular 2.x app, 
