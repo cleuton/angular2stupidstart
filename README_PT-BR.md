@@ -1,4 +1,5 @@
-# Angular 2 Stupid Start
+# Angular 2+ Stupid Start
+## Agora na versão 4.0
 
 *Por Cleuton Sampaio*
 
